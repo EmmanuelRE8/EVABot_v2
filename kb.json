@@ -1,0 +1,288 @@
+[
+  {
+    "tag": "BEATS Request System",
+    "company": "Ticketmaster Mexico",
+    "period": "2023-2024",
+    "context": "Lack of visibility into BI requests and no SLA tracking. Manual processes caused delays and stakeholder dissatisfaction.",
+    "actions": [
+      "Designed and deployed BEATS (Bitácora de Ejecución y Administración de Tableros y Solicitudes) using Smartsheet.",
+      "Built triage system with 3 intake forms (DB, BI, Marketing).",
+      "Automated email responses, deadline reminders, and delivery confirmations with attachments."
+    ],
+    "impact": [
+      "Reporting effectiveness improved from 80% to 98%.",
+      "Average delivery time reduced by ~3 days.",
+      "Stakeholder satisfaction increased significantly."
+    ],
+    "tools": ["Smartsheet", "Automation"],
+    "softskills": ["Stakeholder management", "Process design", "Cross-team coordination"],
+    "keywords": ["request system", "automation", "SLA tracking", "business intelligence"]
+  },
+  {
+    "tag": "Tableau Executive Dashboards",
+    "company": "Ticketmaster Mexico",
+    "period": "2022-2024",
+    "context": "Executives required clear visibility of revenue, service fees, and promoter KPIs.",
+    "actions": [
+      "Designed Tableau dashboards connected to BigQuery and Databricks.",
+      "Integrated daily refresh processes with automated ETL pipelines.",
+      "Aligned dashboards to exec and non-technical audiences."
+    ],
+    "impact": [
+      "Daily update time reduced by 90%.",
+      "Data accuracy improved to ~92%.",
+      "Increased adoption by senior leadership for decision-making."
+    ],
+    "tools": ["Tableau", "BigQuery", "Databricks", "SQL"],
+    "softskills": ["Storytelling", "Stakeholder communication", "Data visualization"],
+    "keywords": ["dashboard", "Tableau", "revenue", "KPI"]
+  },
+  {
+    "tag": "Archtics → BigQuery Pipeline",
+    "company": "Ticketmaster Mexico",
+    "period": "2024",
+    "context": "Needed to migrate historical data from Archtics (SQL Anywhere) to BigQuery for analysis.",
+    "actions": [
+      "Created semi-automated process: export CSVs from Archtics, deposit into Box, load into BigQuery via Databricks notebooks.",
+      "Replaced manual legacy system with governed and auditable pipeline.",
+      "Documented process for reproducibility."
+    ],
+    "impact": [
+      "Enabled historical analysis from 2017–2024 in BigQuery.",
+      "Improved data accessibility for BI and marketing teams."
+    ],
+    "tools": ["Databricks", "Python", "Pandas", "BigQuery", "Box"],
+    "softskills": ["Problem-solving", "Documentation", "Process optimization"],
+    "keywords": ["ETL", "Archtics", "BigQuery", "Databricks"]
+  },
+  {
+    "tag": "Global Databricks Proposal",
+    "company": "Ticketmaster Global BI",
+    "period": "2025",
+    "context": "Global BI team required unified governance for Databricks data across regions.",
+    "actions": [
+      "Prepared proposal using Mexico case studies (Finance, Fraud, Banking/Sponsorships, Marketing, Reporting).",
+      "Highlighted issues with current pipelines and benefits of a global approach.",
+      "Suggested governance standards and best practices."
+    ],
+    "impact": [
+      "Raised visibility of Mexico’s BI challenges at global level.",
+      "Contributed to alignment on future global architecture."
+    ],
+    "tools": ["Databricks", "BigQuery", "Python", "Governance frameworks"],
+    "softskills": ["Strategic communication", "Governance", "Collaboration"],
+    "keywords": ["Databricks", "governance", "global BI"]
+  },
+  {
+    "tag": "Fraud & Cybersecurity Dashboards",
+    "company": "Ticketmaster Mexico",
+    "period": "2023",
+    "context": "Needed monitoring for fraud detection and cybersecurity risks.",
+    "actions": [
+      "Designed dashboards integrating fraud detection data sources.",
+      "Coordinated with Fraud/Cybersecurity teams to define KPIs."
+    ],
+    "impact": [
+      "Provided visibility into suspicious transactions and threats.",
+      "Enabled faster response times for fraud prevention."
+    ],
+    "tools": ["Tableau", "SQL", "Databricks"],
+    "softskills": ["Cross-functional teamwork", "Risk management"],
+    "keywords": ["fraud", "cybersecurity", "dashboard"]
+  },
+  {
+    "tag": "Cross-Functional Leadership",
+    "company": "Ticketmaster Mexico",
+    "period": "2022-2024",
+    "context": "Multiple departments (MKT, Revenue, Finance, Ops, HR) required coordinated BI support.",
+    "actions": [
+      "Led BI team in handling requests across 7+ functional areas.",
+      "Implemented triage to prioritize based on business value.",
+      "Built collaboration frameworks with non-technical teams."
+    ],
+    "impact": [
+      "Improved cross-functional project delivery.",
+      "Greater alignment between BI outputs and business needs."
+    ],
+    "tools": ["Smartsheet", "Tableau", "SQL"],
+    "softskills": ["Leadership", "Stakeholder management", "Collaboration"],
+    "keywords": ["cross-functional", "leadership", "team coordination"]
+  },
+  {
+    "tag": "Python Automation & Forecasting",
+    "company": "Ticketmaster Mexico",
+    "period": "2022-2024",
+    "context": "Needed to automate ETL and forecasting processes.",
+    "actions": [
+      "Developed Databricks notebooks using PySpark and Pandas.",
+      "Implemented forecasting models (Prophet, ARIMA) for sales projections.",
+      "Built scripts for API consumption and QA checks."
+    ],
+    "impact": [
+      "Stable pipelines reduced manual work.",
+      "Enabled proactive sales and pricing decisions."
+    ],
+    "tools": ["Python", "Databricks", "Prophet", "ARIMA", "Pandas"],
+    "softskills": ["Analytical thinking", "Problem-solving"],
+    "keywords": ["ETL", "forecasting", "Prophet", "ARIMA", "automation"]
+  },
+  {
+    "tag": "API Creation & Governance",
+    "company": "Ticketmaster Mexico",
+    "period": "2023",
+    "context": "Manual exports slowed down analytics. Needed APIs for buyer and event data.",
+    "actions": [
+      "Created lightweight ingestion endpoints.",
+      "Defined schema governance and documentation."
+    ],
+    "impact": [
+      "Lower dependency on manual exports.",
+      "Improved reproducibility of analytics."
+    ],
+    "tools": ["APIs", "Python", "Documentation"],
+    "softskills": ["Technical leadership", "Documentation"],
+    "keywords": ["API", "schema governance", "automation"]
+  },
+  {
+    "tag": "Team Leadership & Migration",
+    "company": "Ticketmaster Mexico",
+    "period": "2022-2024",
+    "context": "Led BI + DB team during cloud migration and restructuring.",
+    "actions": [
+      "Defined ETL/SQL standards and coached team members.",
+      "Conducted code reviews and dashboard UX feedback.",
+      "Added DB specialist to strengthen migration project."
+    ],
+    "impact": [
+      "Improved delivery speed and data reliability.",
+      "Team developed stronger technical and collaborative skills."
+    ],
+    "tools": ["Databricks", "SQL", "Tableau"],
+    "softskills": ["Leadership", "Coaching", "Mentoring"],
+    "keywords": ["leadership", "migration", "coaching"]
+  },
+  {
+    "tag": "Forecasting & Pricing Committees",
+    "company": "Ticketmaster Mexico",
+    "period": "2025",
+    "context": "Created data analysis committees for different business areas.",
+    "actions": [
+      "Established ‘Ticketnometría’ (pricing & sales).",
+      "Formed Marketnometría (marketing data) and Deportenometría (sports data).",
+      "Launched HPT initiative (high performance training)."
+    ],
+    "impact": [
+      "Strengthened collaboration between BI and business units.",
+      "Provided specialized insights for pricing and marketing strategies."
+    ],
+    "tools": ["Analytics", "SQL", "Python", "Tableau"],
+    "softskills": ["Collaboration", "Strategic thinking"],
+    "keywords": ["committee", "pricing", "forecasting", "collaboration"]
+  },
+  {
+    "tag": "Strategic Foresight Research",
+    "company": "Tec de Monterrey",
+    "period": "2022-2025",
+    "context": "Thesis on higher education in Costa Rica 2050 using horizon scanning.",
+    "actions": [
+      "Conducted literature review and horizon scanning using PESTLE.",
+      "Analyzed accessibility and pressures on public universities.",
+      "Produced recommendations for policymakers."
+    ],
+    "impact": [
+      "Developed foresight methodology applicable to higher education.",
+      "Identified key trends for Costa Rica’s education system."
+    ],
+    "tools": ["Strategic Foresight", "PESTLE Analysis", "Research"],
+    "softskills": ["Analytical thinking", "Research", "Foresight"],
+    "keywords": ["foresight", "education", "PESTLE", "Costa Rica"]
+  },
+  {
+    "tag": "MBAI Program",
+    "company": "Ontario Tech University",
+    "period": "2025-2026",
+    "context": "Master of Business Analytics & AI with 16-month structure.",
+    "actions": [
+      "Studied advanced courses in AI, ML, data strategy, and storytelling.",
+      "Prepared for co-op/internship in Summer 2026."
+    ],
+    "impact": [
+      "12 h/wk learning commitment.",
+      "Strengthened portfolio with applied AI and analytics."
+    ],
+    "tools": ["Python", "SQL", "Tableau", "Machine Learning"],
+    "softskills": ["Adaptability", "Continuous learning"],
+    "keywords": ["MBAI", "Ontario Tech", "AI", "business analytics"]
+  },
+{
+  "tag": "Wisevoter Interactive Maps",
+  "company": "Top Agency",
+  "period": "2021-2022",
+  "context": "Worked on client-facing projects at Top Agency, including Wisevoter initiative to create interactive maps for political and social data.",
+  "actions": [
+    "Developed interactive maps using JavaScript and web libraries (D3.js / Leaflet).",
+    "Transformed large datasets into accessible, comparative visualizations.",
+    "Ensured responsiveness and usability across devices for public audiences."
+  ],
+  "impact": [
+    "Enabled Wisevoter users to explore data interactively instead of static charts.",
+    "Improved engagement with political and demographic data through visualization."
+  ],
+  "tools": ["JavaScript", "D3.js", "Leaflet", "Web Development"],
+  "softskills": ["Creativity", "Client communication", "Visualization"],
+  "keywords": ["maps", "Wisevoter", "Top Agency", "JavaScript", "data storytelling"]
+},
+{
+  "tag": "Consulting Projects",
+  "company": "Cuadrante Consultores",
+  "period": "2019-2021",
+  "context": "Provided consulting services in strategic foresight and economic analysis for clients in government and education sectors.",
+  "actions": [
+    "Conducted research and data analysis to support public policy decisions.",
+    "Applied foresight methodologies (PESTLE, scenarios) to long-term planning.",
+    "Delivered insights and reports tailored to institutional needs."
+  ],
+  "impact": [
+    "Strengthened decision-making capacity of clients through structured foresight.",
+    "Produced reports that guided strategic planning in higher education and government contexts."
+  ],
+  "tools": ["Foresight frameworks", "Economic analysis", "Scenario planning"],
+  "softskills": ["Analytical thinking", "Client advisory", "Strategic foresight"],
+  "keywords": ["consulting", "Cuadrante", "foresight", "economic analysis", "strategy"]
+},
+{
+  "tag": "OCESA Brain Project",
+  "company": "OCESA / Ticketmaster",
+  "period": "2023",
+  "context": "Collaborated on OCESA Brain initiative for data-driven event insights.",
+  "actions": [
+    "Supported integration of ticketing and event data pipelines.",
+    "Worked on analytics to enhance promoter and event decision-making."
+  ],
+  "impact": [
+    "Contributed to centralization of event intelligence for OCESA.",
+    "Enhanced visibility of event performance metrics."
+  ],
+  "tools": ["Databricks", "SQL", "Analytics"],
+  "softskills": ["Collaboration", "Problem-solving"],
+  "keywords": ["OCESA Brain", "events", "analytics", "ticketing"]
+},
+{
+  "tag": "Extracurricular Activities",
+  "company": "Personal / Community",
+  "period": "Ongoing",
+  "context": "Active participation in extracurricular learning and community initiatives.",
+  "actions": [
+    "Attended AI & Data Summits (e.g., Vector Institute AI Summit & Career Fair 2025).",
+    "Engaged in networking events, peer learning, and academic clubs.",
+    "Developed side projects in visualization, healthcare apps, and hackathon-style competitions."
+  ],
+  "impact": [
+    "Built strong professional network in Canada and Mexico.",
+    "Expanded skillset beyond formal roles, demonstrating adaptability and curiosity."
+  ],
+  "tools": ["Networking", "Hackathons", "Side projects"],
+  "softskills": ["Networking", "Adaptability", "Continuous learning"],
+  "keywords": ["extracurricular", "AI Summit", "networking", "projects"]
+}
+]
