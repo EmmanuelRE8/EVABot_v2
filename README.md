@@ -58,11 +58,6 @@ This project reflects my approach to **business analytics and AI**:
 - Use technology to **simplify complex stories**.  
 - Demonstrate **creativity + technical skills** in a real-world, hands-on display.  
 
----
-
-## 📜 License
-
-MIT License.
 
 
 ---
