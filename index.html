@@ -140,7 +140,11 @@ const chips = document.getElementById("chips");
 function addMsg(text, who){
   const div = document.createElement("div");
   div.className = `msg ${who}`;
-  div.innerHTML = (text||"").replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>");
+  // Replace line breaks with <br>
+  const safe = (text||"")
+    .replace(/\n/g, "<br>")
+    .replace(/^- /gm, "• "); // simple bullet
+  div.innerHTML = safe;
   chat.appendChild(div);
   chat.scrollTop = chat.scrollHeight;
 }
@@ -179,4 +183,5 @@ addMsg("Hi! Ask me about my projects, work history, availability, or STAR exampl
 </script>
 </body>
 </html>
+
 
