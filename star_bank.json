@@ -1,0 +1,26 @@
+[
+  {
+    "tag": "Stakeholder Management — BEATS",
+    "skill": "Stakeholder Management",
+    "situation": "BI requests lacked visibility and SLAs; delays caused frustration.",
+    "task": "Create a transparent, trackable intake and delivery process.",
+    "action": "Built BEATS in Smartsheet with triage forms, auto-reminders, delivery proofs.",
+    "result": "Effectiveness 80%→98%; ~2 days faster; higher satisfaction across teams."
+  },
+  {
+    "tag": "Cross-Functional Leadership",
+    "skill": "Leadership",
+    "situation": "Multiple areas (MKT, Revenue, Finance, Fraud, Ops, HR) needed BI alignment.",
+    "task": "Prioritize by business value and standardize delivery.",
+    "action": "Set triage, defined standards, coached team; regular exec syncs.",
+    "result": "Higher delivery reliability and adoption; clearer KPI ownership."
+  },
+  {
+    "tag": "Data Pipeline Modernization",
+    "skill": "Process Improvement",
+    "situation": "Legacy Archtics exports were manual and error-prone.",
+    "task": "Enable governed historical analysis in BigQuery.",
+    "action": "Databricks notebooks (PySpark/Pandas), QA checks, docs, Box ingestion.",
+    "result": "2017–2024 analysis unlocked; reproducible ETL; reduced manual work."
+  }
+]

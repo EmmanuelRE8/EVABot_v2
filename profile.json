@@ -1,0 +1,56 @@
+{
+  "name": "Emmanuel Escalona",
+  "headline": "Business Intelligence & Analytics Leader",
+  "location": "Oshawa / Toronto, Canada",
+  "years_experience": "5 years",
+  "last_updated": "2025-09-30",
+  "contacts": {
+    "email": "emmanuel.ruedaescalona@ontariotechu.net",
+    "github": "https://github.com/EmmanuelRE8",
+    "linkedin": "https://www.linkedin.com/in/emmanuelre/"
+  },
+  "work_preferences": {
+    "roles": ["BI/Analytics Lead", "Data Analyst", "Bussines Intelligence"],
+    "work_modes": ["Hybrid", "On-site (Toronto)", "Remote"],
+    "industries": ["Entertainment", "Tech", "Education", "Sports", "Healthcare", "Banking"],
+    "visa_status": [ "Co-Op Work Permit (Summer 2026)", "Internship (Summer 2026)", "Full-Time Permit (After Summer 2026)"],
+    "can_apply_from": "2026-05-01",
+    "open_to": ["Co-op", "Internship", "Full-time"]
+  },
+  "work_history": [
+    {
+      "role": "BI & Data Team Lead",
+      "company": "Ticketmaster Mexico",
+      "start": "2023-04",
+      "end": "2025-07",
+      "location": "Mexico City, MX (on-site)",
+      "highlights": [
+        "BEATS request system: reporting effectiveness 80% → 98%",
+        "Tableau exec dashboards (Revenue, Fees, Promoter KPIs)",
+        "Archtics→BigQuery pipeline via Databricks; governed ETL"
+      ]
+    },
+    {
+      "role": "Data Visualization / Web (Wisevoter.com maps)",
+      "company": "Top Agency",
+      "start": "2021-06",
+      "end": "2023-04",
+      "location": "Remote",
+      "highlights": [
+        "Interactive maps with JavaScript (D3.js) for public data",
+        "Responsive storytelling for political/demographic insights"
+      ]
+    },
+    {
+      "role": "Data Consultant",
+      "company": "Cuadrante Consultores",
+      "start": "2021-06",
+      "end": "2020-09",
+      "location": "Mexico",
+      "highlights": [
+        "Foresight & economic analysis for gov/education clients",
+        "Scenario planning and PESTLE research"
+      ]
+    }
+  ]
+}
