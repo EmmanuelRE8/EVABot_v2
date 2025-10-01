@@ -1,142 +1,186 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>EmmaBot: Projects & Skills Chat</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f7f9fa;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      flex-direction: column;
-      height: 100vh;
-    }
-    header {
-      background: #05a06d;
-      color: white;
-      padding: 12px;
-      text-align: center;
-      font-weight: bold;
-    }
-    #chat {
-      flex: 1;
-      padding: 15px;
-      overflow-y: auto;
-    }
-    .user-message, .bot-message {
-      margin: 10px 0;
-      padding: 10px 14px;
-      border-radius: 10px;
-      max-width: 75%;
-      line-height: 1.4;
-    }
-    .user-message {
-      background: #05a06d;
-      color: white;
-      align-self: flex-end;
-      margin-left: auto;
-    }
-    .bot-message {
-      background: white;
-      border: 1px solid #ddd;
-      align-self: flex-start;
-      margin-right: auto;
-    }
-    #input-area {
-      display: flex;
-      padding: 10px;
-      border-top: 1px solid #ccc;
-      background: white;
-    }
-    #query {
-      flex: 1;
-      padding: 8px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
-    button {
-      background: #05a06d;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      margin-left: 8px;
-      padding: 8px 14px;
-      cursor: pointer;
-    }
-    button:hover {
-      background: #04895e;
-    }
-    /* Markdown rendering styles */
-    .bot-message ul {
-      padding-left: 20px;
-      margin: 5px 0;
-    }
-    .bot-message strong {
-      color: #05a06d;
-    }
-  </style>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Emmanuel Escalona — Projects & Skills Chat</title>
+<meta name="description" content="Reverse Career Fair — Profile + Chatbot grounded on my projects and skills (kb.json).">
+<style>
+  :root{
+    --green:#05a06d; --green-ink:#065f46;
+    --ink:#0f172a; --muted:#64748b; --line:#e5e7eb; --bg:#ffffff; --soft:#f6fefb;
+    --chip-bg:#ecfdf5; --chip-bd:#d1fae5; --chip-ink:#065f46;
+  }
+  *{box-sizing:border-box}
+  body{margin:0; font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial; color:var(--ink); background:var(--bg)}
+  a{color:var(--green-ink); text-decoration:none}
+  .wrap{max-width:1100px; margin:0 auto; padding:20px}
+  .grid{display:grid; grid-template-columns:340px 1fr; gap:18px}
+  @media (max-width: 900px){ .grid{grid-template-columns:1fr} }
+  .card{background:#fff; border:1px solid var(--line); border-radius:18px; box-shadow:0 6px 24px rgba(0,0,0,.06)}
+  header{padding:18px 22px; border-bottom:1px solid var(--line); display:flex; align-items:center; justify-content:space-between}
+  header h1{font-size:18px; margin:0}
+  header small{color:var(--muted)}
+  /* Profile */
+  .profile{padding:18px 18px}
+  .name{font-size:22px; font-weight:700; margin:4px 0}
+  .badge{display:inline-block; background:rgba(5,160,109,.1); color:var(--green-ink); border:1px solid rgba(5,160,109,.25); padding:4px 8px; border-radius:999px; font-size:12px}
+  .kv{margin:10px 0 0 0; padding:0; list-style:none}
+  .kv li{display:flex; gap:8px; padding:6px 0; border-bottom:1px dashed #edf2f7}
+  .kv li:last-child{border-bottom:none}
+  .kv b{min-width:120px; color:var(--muted); font-weight:600}
+  .cta{display:flex; gap:10px; margin-top:12px; flex-wrap:wrap}
+  .btn{background:var(--green); color:#fff; border:none; padding:10px 14px; border-radius:12px; font-weight:600; cursor:pointer}
+  .btn.secondary{background:#ecfeff; color:#0e7490; border:1px solid #bae6fd}
+  .pill{display:inline-block; padding:3px 10px; border-radius:999px; background:#eef2ff; color:#3730a3; border:1px solid #c7d2fe; font-size:12px; margin:2px 6px 0 0}
+  /* Chat */
+  .chat-wrap .chips{display:flex; flex-wrap:wrap; gap:8px; padding:12px 16px; border-bottom:1px solid var(--line)}
+  .chip{background:var(--chip-bg); color:var(--chip-ink); border:1px solid var(--chip-bd); padding:6px 10px; border-radius:999px; font-size:12px; cursor:pointer}
+  .chat{padding:16px; height:60vh; min-height:380px; overflow:auto; scroll-behavior:smooth;}
+  .msg{max-width:78%; margin:8px 0; padding:12px 14px; border-radius:14px; line-height:1.35; word-wrap:break-word}
+  .me{margin-left:auto; background:#1f77b4; color:#fff; border-bottom-right-radius:6px}
+  .bot{margin-right:auto; background:var(--soft); border:1px solid var(--line); color:var(--ink); border-bottom-left-radius:6px}
+  .inputbar{display:flex; gap:10px; padding:12px; border-top:1px solid var(--line)}
+  .inputbar input{flex:1; padding:12px 14px; border:1px solid var(--line); border-radius:12px; font-size:14px}
+  .inputbar button{background:var(--green); color:#fff; border:none; padding:12px 16px; border-radius:12px; cursor:pointer; font-weight:600}
+</style>
 </head>
 <body>
-  <header>
-    EmmaBot: Projects & Skills Chat  
-    <div style="font-size: 0.8em; font-weight: normal;">
-      by Emmanuel Rueda Escalona — MBAI (Ontario Tech)
+<div class="wrap">
+  <div class="card">
+    <header>
+      <h1>Reverse Career Fair — Profile & Chat</h1>
+      <small>by Emmanuel Escalona · MBAI (Ontario Tech)</small>
+    </header>
+    <div class="grid">
+
+      <!-- LEFT: PROFILE -->
+      <aside class="card profile">
+        <div class="badge" id="pf_badge">Available for Analytics / BI / AI roles</div>
+        <div class="name" id="pf_name">Emmanuel Escalona</div>
+        <div id="pf_tagline" style="color:var(--muted)">Business Analytics & AI · Data/BI Leader</div>
+
+        <ul class="kv" id="pf_kv">
+          <!-- se completa con JS desde profile.json -->
+        </ul>
+
+        <div class="cta">
+          <a class="btn" href="onepager.html" target="_blank" rel="noopener">One-pager / PDF</a>
+          <a class="btn secondary" href="https://raw.githubusercontent.com/EmmanuelRE8/EmmaBot_v1/main/kb.json" target="_blank" rel="noopener">kb.json</a>
+          <a class="btn secondary" href="https://raw.githubusercontent.com/EmmanuelRE8/EmmaBot_v1/main/profile.json" target="_blank" rel="noopener">profile.json</a>
+        </div>
+
+        <div style="margin-top:12px">
+          <h3 style="font-size:14px; color:var(--muted); margin:14px 0 8px 0;">Skills</h3>
+          <div id="pf_skills"></div>
+        </div>
+      </aside>
+
+      <!-- RIGHT: CHAT -->
+      <section class="card chat-wrap">
+        <div class="chips" id="chips"></div>
+        <div class="chat" id="chat"></div>
+        <div class="inputbar">
+          <input id="q" placeholder="Ask about my projects, experience, roles, availability, or STAR examples…" />
+          <button id="send">Send</button>
+        </div>
+      </section>
+
     </div>
-  </header>
-
-  <div id="chat"></div>
-
-  <div id="input-area">
-    <input id="query" type="text" placeholder="Ask about my projects, impact, or skills…" />
-    <button onclick="sendQuery()">Send</button>
   </div>
+</div>
 
-  <!-- Marked.js for Markdown rendering -->
-  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script>
+/* ====== CONFIG ====== */
+const WORKER_URL = "https://reverse-fair-bot.eruedae88.workers.dev/chat"; // ← tu endpoint
+const QUICK = [
+  "Where are you based?",
+  "How many years of experience do you have?",
+  "When can you apply and what roles are you open to?",
+  "Tell me about BEATS",
+  "Give me a STAR example of leadership"
+];
 
-  <script>
-    const WORKER_URL = "https://reverse-fair-bot.eruedae88.workers.dev/chat";
+/* ====== PROFILE FROM profile.json ====== */
+async function loadProfile(){
+  try{
+    const r = await fetch("profile.json", { cache: "no-store" });
+    if(!r.ok) throw new Error("profile.json not found");
+    const PROFILE = await r.json();
 
-    function renderMessage(msg, sender) {
-      const chat = document.getElementById("chat");
-      const div = document.createElement("div");
-      div.className = sender === "user" ? "user-message" : "bot-message";
-      // Render Markdown for bot messages
-      if (sender === "bot") {
-        div.innerHTML = marked.parse(msg);
-      } else {
-        div.innerText = msg;
-      }
-      chat.appendChild(div);
-      chat.scrollTop = chat.scrollHeight; // auto scroll
-    }
-
-    async function sendQuery() {
-      const query = document.getElementById("query").value.trim();
-      if (!query) return;
-      renderMessage(query, "user");
-      document.getElementById("query").value = "";
-
-      try {
-        const res = await fetch(WORKER_URL, {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ query })
-        });
-        const data = await res.json();
-        renderMessage(data.answer || "⚠️ No answer received.", "bot");
-      } catch (err) {
-        renderMessage("⚠️ Error: " + err.message, "bot");
-      }
-    }
-
-    // Send on Enter key
-    document.getElementById("query").addEventListener("keydown", (e) => {
-      if (e.key === "Enter") sendQuery();
+    document.getElementById("pf_name").textContent    = PROFILE.name || "—";
+    document.getElementById("pf_tagline").textContent = PROFILE.headline || "";
+    const ul = document.getElementById("pf_kv");
+    const kvs = [
+      ["Location", PROFILE.location || ""],
+      ["Experience", PROFILE.years_experience || ""],
+      ["Availability", PROFILE.work_preferences?.can_apply_from || ""],
+      ["Preferred roles", (PROFILE.work_preferences?.roles || []).join(", ")],
+      ["Work modes", (PROFILE.work_preferences?.work_modes || []).join(", ")]
+    ];
+    ul.innerHTML = "";
+    kvs.forEach(([k,v])=>{
+      const li = document.createElement("li");
+      const b = document.createElement("b"); b.textContent = k;
+      const span = document.createElement("span"); span.textContent = v || "—";
+      li.appendChild(b); li.appendChild(span); ul.appendChild(li);
     });
-  </script>
+
+    const skills = PROFILE.skills || ["Python (Programming)","SQL","Databricks","BigQuery","Tableau","ETL/ELT","Storytelling","Leadership","APIs"];
+    const sk = document.getElementById("pf_skills");
+    sk.innerHTML = skills.map(s=>`<span class="pill">${s}</span>`).join("");
+  }catch(e){
+    // si falla, deja el placeholder
+    console.warn("Profile load warning:", e);
+  }
+}
+loadProfile();
+
+/* ====== CHAT LOGIC ====== */
+const chat  = document.getElementById("chat");
+const input = document.getElementById("q");
+const send  = document.getElementById("send");
+const chips = document.getElementById("chips");
+
+function addMsg(text, who){
+  const div = document.createElement("div");
+  div.className = `msg ${who}`;
+  div.innerHTML = (text||"").replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>");
+  chat.appendChild(div);
+  chat.scrollTop = chat.scrollHeight;
+}
+
+async function sendQ(){
+  const q = input.value.trim();
+  if (!q) return;
+  addMsg(q, "me");
+  input.value="";
+  try{
+    const r = await fetch(WORKER_URL, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ query: q })
+    });
+    const data = await r.json();
+    addMsg(data.answer || "No answer", "bot");
+  } catch(e){
+    addMsg("Oops, there was a problem. Please try again.", "bot");
+  }
+}
+
+send.onclick = sendQ;
+input.addEventListener("keydown", (e)=>{ if (e.key==="Enter") sendQ(); });
+
+QUICK.forEach(t=>{
+  const c = document.createElement("div");
+  c.className = "chip";
+  c.textContent = t;
+  c.onclick = ()=>{ input.value = t; sendQ(); };
+  chips.appendChild(c);
+});
+
+// Welcome
+addMsg("Hi! Ask me about my projects, work history, availability, or STAR examples. 👋", "bot");
+</script>
 </body>
 </html>
