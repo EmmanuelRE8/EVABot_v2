@@ -1,64 +1,94 @@
 # EmmaBot_v1
 
-This repository hosts my interactive chatbot, EmmaBot_v1.   
-It combines a **one-pager with KPIs, projects and skills** plus a **mini-chat app** where visitors can explore my experience through Q&A.
+This repository hosts **EmmaBot_v1**, an interactive chatbot that presents my career, projects, and skills in a dynamic way.  
+
+It combines:  
+- A **profile panel** with personal/professional details.  
+- A **mini-chat app** where visitors can ask questions.  
 
 ---
 
 ## 🎯 Purpose
 
-The goal of this project is to move beyond a traditional CV and create an **interactive, data-driven way to present my career story**.  
-Instead of only reading static text, recruiters and colleagues can **ask questions directly** to a mini-chatbot and explore:
+The goal of EmmaBot is to go **beyond a traditional CV** and showcase my experience through an **interactive, AI-powered format**.  
 
-- My professional impact (KPIs, automation gains, cross-functional projects).  
-- Key tools and technologies I master (Python, SQL, Databricks, Tableau).  
-- Leadership and adaptability skills across diverse teams and nationalities.  
+Instead of just reading static text, recruiters and colleagues can:  
+- **Ask questions** about my projects, skills, and impact.  
+- Learn about my **career timeline, roles, and availability**.  
+- Explore **STAR-style answers** to behavioral/soft skill questions.  
+- See how BI/AI tools can be applied to storytelling in real-world career fairs.  
 
 ---
 
 ## 🛠️ How It Was Built
 
-- **Static site** hosted on GitHub Pages for free, accessible via QR.  
-- **One-pager (`onepager.html`)** designed to summarize achievements and learning focus (printable as PDF).  
-- **Mini-chat app (`index.html`)** built in vanilla JavaScript + CSS, fully client-side, no backend.  
-- **Knowledge base (KB)** embedded directly in the app with my projects, skills and impact.  
-- **Optional LLM mode** via `worker.js` on Cloudflare Workers, enabling AI-powered contextual answers without exposing API keys.  
+1. **Frontend (GitHub Pages)**  
+   - `index.html` → A responsive web app (HTML + CSS + Vanilla JS).  
+   - Loads `profile.json` (basic info, availability, work history).  
+   - Loads `kb.json` (projects, impact, tools, soft skills).  
+   - Loads `star_bank.json` (STAR answers for soft skills).  
+   - Provides a clean **chat interface** for interaction.  
+
+2. **Backend (Cloudflare Workers)**  
+   - A Worker (`src/index.js`) handles incoming chat requests.  
+   - It detects intent:  
+     - *Profile questions* → uses `profile.json`.  
+     - *STAR/soft skill questions* → uses `star_bank.json`.  
+     - *Project/impact questions* → uses `kb.json`.  
+   - Calls **Groq API** (`llama-3.1-8b-instant`) via OpenAI-compatible endpoint.  
+   - Returns concise, bullet-style answers.  
+   - Uses CORS headers for public web access.  
+
+3. **Data & Knowledge Base**  
+   - `profile.json` → name, studies, experience, work history, preferences.  
+   - `kb.json` → project portfolio, KPIs, actions, impacts, tools.  
+   - `star_bank.json` → STAR responses (Situation, Task, Action, Result).  
+
+4. **Deployment**  
+   - Frontend → hosted free on **GitHub Pages**, accessible by QR code.  
+   - Backend → deployed on **Cloudflare Workers** with environment secret `GROQ_API_KEY`.  
+   - Integrated seamlessly: frontend sends chat queries to Worker, Worker calls Groq LLM + JSON sources, answers come back to the UI.  
 
 ---
 
 ## 📂 Repository Structure
 
-- `index.html` → main chat app  
-- `onepager.html` → portfolio one-pager (can be saved as PDF)  
-- `assets/` → images, logos, etc.  
-- `worker.js` → Cloudflare Worker for LLM integration  
+- `index.html` → main interactive chatbot (profile panel + chat).  
+- `onepager.html` → career one-pager (printable as PDF).  
+- `profile.json` → personal info, availability, work history.  
+- `kb.json` → projects and professional impact.  
+- `star_bank.json` → soft skills (STAR examples).  
+- `src/index.js` → Cloudflare Worker code.  
 
 ---
 
 ## 📊 Highlights
 
-- **22 strategic projects** delivered in the last 2 years.  
-- Collaboration with **13 nationalities** across cross-functional teams.  
-- **90% faster automation** of reporting pipelines with Databricks + BigQuery.  
+- **22 projects** delivered in the last 2 years.  
+- **13 nationalities** collaborated with.  
+- **90% faster automation** of reporting pipelines (Databricks + BigQuery).  
 - **BEATS request system**: improved reporting effectiveness from **80% → 98%**.  
+- **Interactive STAR answers**: leadership, stakeholder management, process improvement.  
 
 ---
 
 ## 🌐 Live Access
 
-- **Interactive Chat App:** `https://<username>.github.io/<repo>/`  
-- **One-Pager (PDF/HTML):** `https://<username>.github.io/<repo>/onepager.html`  
-
----
-
-## 💡 Inspiration
-
-This project reflects my approach to **business analytics and AI**:  
-- Make data **accessible and engaging**.  
-- Use technology to **simplify complex stories**.  
-- Demonstrate **creativity + technical skills** in a real-world, hands-on display.  
-
+- **Chat App (GitHub Pages):**  
+  👉 [https://emmanuelre8.github.io/EmmaBot_v1/](https://emmanuelre8.github.io/EmmaBot_v1/)  
 
 
 ---
 
+## 💡 Learning Outcomes
+
+This project shows how to combine **BI, AI, and storytelling** to stand out in a **reverse career fair**:  
+
+- Demonstrates **creativity + technical skills**.  
+- Uses **LLMs** in a practical, low-cost way (Groq API).  
+- Integrates **GitHub Pages + Cloudflare Workers** for free hosting.  
+- Provides a **hands-on proof** of how BI professionals can make data **accessible and engaging**.  
+
+---
+
+👉 This README itself becomes part of the narrative: showing not only *what EmmaBot does*, but also *how it was engineered*.  
