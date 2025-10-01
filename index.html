@@ -140,15 +140,16 @@ const chips = document.getElementById("chips");
 function addMsg(text, who){
   const div = document.createElement("div");
   div.className = `msg ${who}`;
-  // Replace line breaks with <br>
   const safe = (text||"")
-    .replace(/\n/g, "<br>")
-    .replace(/^- /gm, "• "); // simple bullet
+    .replace(/\*\*(.*?)\*\*/g, "$1")   // strip bold
+    .replace(/\*/g, "")                // strip stray stars
+    .replace(/\n/g, "<br>")            // newlines to <br>
+    .replace(/- /g, "• ");             // bullets
   div.innerHTML = safe;
   chat.appendChild(div);
   chat.scrollTop = chat.scrollHeight;
 }
-
+  
 async function sendQ(){
   const q = input.value.trim();
   if (!q) return;
@@ -183,5 +184,6 @@ addMsg("Hi! Ask me about my projects, work history, availability, or STAR exampl
 </script>
 </body>
 </html>
+
 
 
