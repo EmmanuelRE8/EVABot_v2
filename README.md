@@ -8,6 +8,14 @@ It combines:
 
 ---
 
+## 🌐 Live Access
+
+- **Chat App (GitHub Pages):**  
+  👉 [https://emmanuelre8.github.io/EmmaBot_v1/](https://github.com/EmmanuelRE8/EVABot_v2))/)  
+
+
+---
+
 ## 🎯 Purpose
 
 The goal of EmmaBot is to go **beyond a traditional CV** and showcase my experience through an **interactive, AI-powered format**.  
@@ -72,13 +80,6 @@ Instead of just reading static text, recruiters and colleagues can:
 
 ---
 
-## 🌐 Live Access
-
-- **Chat App (GitHub Pages):**  
-  👉 [https://emmanuelre8.github.io/EmmaBot_v1/](https://github.com/EmmanuelRE8/EVABot_v2))/)  
-
-
----
 
 ## 💡 Learning Outcomes
 
