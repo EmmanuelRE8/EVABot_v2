@@ -3,19 +3,19 @@
   "headline": "Business Intelligence & Analytics Leader",
   "location": "Oshawa / Toronto, Canada",
   "years_experience": "5 years",
-  "last_updated": "2025-09-30",
+  "last_updated": "2025-10-15",
   "contacts": {
     "email": "emmanuel.ruedaescalona@ontariotechu.net",
     "github": "https://github.com/EmmanuelRE8",
     "linkedin": "https://www.linkedin.com/in/emmanuelre/"
   },
   "work_preferences": {
-    "roles": ["BI/Analytics Lead", "Data Analyst", "Bussines Intelligence"],
-    "work_modes": ["Hybrid", "On-site (Toronto)", "Remote"],
-    "industries": ["Entertainment", "Tech", "Education", "Sports", "Healthcare", "Banking"],
+    "roles": ["BI / Analytics Lead", "Data Analyst", "Business Intelligence", "Data Project Manager"],
+    "work_modes": ["Remote", "On-site (Toronto)", "Hybrid (Toronto/GTA)"],
+    "industries": ["Entertainment", "Tech", "Education", "Sports", "Healthcare", "Banking", "Energy"],
     "visa_status": [ "Co-Op Work Permit (Summer 2026)", "Internship (Summer 2026)", "Full-Time Permit (After Summer 2026)"],
     "can_apply_from": "2026-05-01",
-    "open_to": ["Co-op", "Internship", "Full-time"]
+    "open_to": ["Co-op", "Internship", "Full-time job"]
   },
   "work_history": [
     {
@@ -25,17 +25,17 @@
       "end": "2025-07",
       "location": "Mexico City, MX (on-site)",
       "highlights": [
-        "BEATS request system: reporting effectiveness 80% → 98%",
-        "Tableau exec dashboards (Revenue, Fees, Promoter KPIs)",
-        "Archtics→BigQuery pipeline via Databricks; governed ETL"
+        "Developed BEATS reporting framework that boosted SLA compliance (80% → 98%) and accuracy (85% → 99%).",
+        "Designed and deployed executive Tableau and Looker Studio dashboards for Revenue, Sales, Finance, Marketing, Cybersecurity, and Fan Analytics.",
+        "Engineered scalable data workflows and ETL pipelines connecting Databricks, BigQuery, and on-prem systems."
       ]
     },
     {
-      "role": "Data Visualization / Web (Wisevoter.com maps)",
+      "role": "Jr Developer / Web (Wisevoter.com maps)",
       "company": "Top Agency",
       "start": "2021-06",
       "end": "2023-04",
-      "location": "Remote",
+      "location": "San Francisco, US (remote)",
       "highlights": [
         "Interactive maps with JavaScript (D3.js) for public data",
         "Responsive storytelling for political/demographic insights"
@@ -46,12 +46,14 @@
       "company": "Cuadrante Consultores",
       "start": "2021-06",
       "end": "2020-09",
-      "location": "Mexico",
+      "location": "Mexico City, MX (On site)",
       "highlights": [
         "Foresight & economic analysis for gov/education clients",
         "Scenario planning and PESTLE research"
       ]
     }
-  ]
+  ],
+  "elevator_pitch": "I’m a BI/Analytics leader with 5+ years building reliable data pipelines and executive dashboards (Databricks, BigQuery, SQL, Python, Tableau). I led Ticketmaster Mexico’s BI migration, automated ETL/ELT, and launched BEATS (80%→98% reporting effectiveness). Currently in Ontario (MBAI, Ontario Tech), I’m open to Co-op/Internships for Summer 2026 and full-time after that—ideally remote or Toronto-based."
 }
+
 
