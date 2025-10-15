@@ -75,7 +75,7 @@ Instead of just reading static text, recruiters and colleagues can:
 ## 🌐 Live Access
 
 - **Chat App (GitHub Pages):**  
-  👉 [https://emmanuelre8.github.io/EmmaBot_v1/](https://emmanuelre8.github.io/EVA_Bot(V2)/)  
+  👉 [https://emmanuelre8.github.io/EmmaBot_v1/](https://github.com/EmmanuelRE8/EVABot_v2))/)  
 
 
 ---
