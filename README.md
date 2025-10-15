@@ -1,6 +1,6 @@
-# EmmaBot_v1
+# E-V.A. bot (v2)
 
-This repository hosts **EmmaBot_v1**, an interactive chatbot that presents my career, projects, and skills in a dynamic way.  
+This repository hosts **E-V.A. bot**, an interactive chatbot that presents my career, projects, and skills in a dynamic way.  
 
 It combines:  
 - A **profile panel** with personal/professional details.  
@@ -75,7 +75,7 @@ Instead of just reading static text, recruiters and colleagues can:
 ## 🌐 Live Access
 
 - **Chat App (GitHub Pages):**  
-  👉 [https://emmanuelre8.github.io/EmmaBot_v1/](https://emmanuelre8.github.io/EmmaBot_v1/)  
+  👉 [https://emmanuelre8.github.io/EmmaBot_v1/](https://emmanuelre8.github.io/EVA_Bot(V2)/)  
 
 
 ---
