@@ -13,12 +13,11 @@ It combines:
 - **Chat App (GitHub Pages):**  
   👉 [https://emmanuelre8.github.io/EmmaBot_v1/](https://github.com/EmmanuelRE8/EVABot_v2))/)  
 
-
 ---
 
 ## 🎯 Purpose
 
-The goal of EmmaBot is to go **beyond a traditional CV** and showcase my experience through an **interactive, AI-powered format**.  
+The goal of E-V.A. Bot is to go **beyond a traditional CV** and showcase my experience through an **interactive, AI-powered format**.  
 
 Instead of just reading static text, recruiters and colleagues can:  
 - **Ask questions** about my projects, skills, and impact.  
@@ -69,17 +68,6 @@ Instead of just reading static text, recruiters and colleagues can:
 - `src/index.js` → Cloudflare Worker code.  
 
 ---
-
-## 📊 Highlights
-
-- **22 projects** delivered in the last 2 years.  
-- **13 nationalities** collaborated with.  
-- **90% faster automation** of reporting pipelines (Databricks + BigQuery).  
-- **BEATS request system**: improved reporting effectiveness from **80% → 98%**.  
-- **Interactive STAR answers**: leadership, stakeholder management, process improvement.  
-
----
-
 
 ## 💡 Learning Outcomes
 
