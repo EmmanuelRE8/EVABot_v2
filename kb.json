@@ -15,16 +15,16 @@
       "Stakeholder satisfaction increased significantly."
     ],
     "tools": ["Smartsheet", "Automation"],
-    "softskills": ["Stakeholder management", "Process design", "Cross-team coordination"],
-    "keywords": ["request system", "automation", "SLA tracking", "business intelligence"]
+    "softskills": ["Stakeholder management", "Process design", "Cross-team coordination", "Data Project Management"],
+    "keywords": ["request system", "automation", "SLA tracking", "business intelligence", "Data Project Management"]
   },
   {
     "tag": "Tableau Executive Dashboards",
     "company": "Ticketmaster Mexico",
-    "period": "2022-2024",
-    "context": "Executives required clear visibility of revenue, service fees, and promoter KPIs.",
+    "period": "2022-2025",
+    "context": "Executives required clear visibility of revenue, sales, and fans' insights.",
     "actions": [
-      "Designed Tableau dashboards connected to BigQuery and Databricks.",
+      "Designed Tableau and Looker Studio dashboards connected to BigQuery and Databricks.",
       "Integrated daily refresh processes with automated ETL pipelines.",
       "Aligned dashboards to exec and non-technical audiences."
     ],
@@ -33,67 +33,102 @@
       "Data accuracy improved to ~92%.",
       "Increased adoption by senior leadership for decision-making."
     ],
-    "tools": ["Tableau", "BigQuery", "Databricks", "SQL"],
+    "tools": ["Tableau", "Looker Studio", "BigQuery", "Databricks", "SQL", "Python"],
     "softskills": ["Storytelling", "Stakeholder communication", "Data visualization"],
     "keywords": ["dashboard", "Tableau", "revenue", "KPI"]
   },
-  {
-    "tag": "Archtics → BigQuery Pipeline",
-    "company": "Ticketmaster Mexico",
-    "period": "2024",
-    "context": "Needed to migrate historical data from Archtics (SQL Anywhere) to BigQuery for analysis.",
-    "actions": [
-      "Created semi-automated process: export CSVs from Archtics, deposit into Box, load into BigQuery via Databricks notebooks.",
-      "Replaced manual legacy system with governed and auditable pipeline.",
-      "Documented process for reproducibility."
-    ],
-    "impact": [
-      "Enabled historical analysis from 2017–2024 in BigQuery.",
-      "Improved data accessibility for BI and marketing teams."
-    ],
-    "tools": ["Databricks", "Python", "Pandas", "BigQuery", "Box"],
-    "softskills": ["Problem-solving", "Documentation", "Process optimization"],
-    "keywords": ["ETL", "Archtics", "BigQuery", "Databricks"]
-  },
+{
+  "tag": "Archtics Pipeline",
+  "company": "Ticketmaster Mexico",
+  "period": "2025",
+  "context": "Tasked with migrating historical sales and customer data from Archtics (SQL Anywhere) to BigQuery for analytics purposes. With a limited two-month timeline before relocating to Canada, I adopted an AGILE methodology to ensure delivery of a functional MVP (minimum viable product) while laying the groundwork for full automation. The project required navigating corporate dependencies such as the global migration of Archtics databases to Databricks and the future enablement of API-based data access.",
+  "actions": [
+    "Designed and implemented a semi-automated ETL pipeline: exported CSVs from Archtics, stored them in Box, and loaded them into BigQuery via Databricks notebooks written in Python.",
+    "Replaced manual legacy workflows with a governed, auditable process documented for reproducibility and scalability.",
+    "Applied Agile principles (sprints, backlog prioritization, retrospectives) to deliver an MVP within the short timeframe and define clear next-phase iterations for automation.",
+    "Aligned the project with global BI architecture standards and collaborated cross-functionally with the corporate data engineering team to ensure long-term integration feasibility."
+  ],
+  "impact": [
+    "Enabled unified historical data analysis (2024–2025) within BigQuery, improving accessibility and consistency for BI, marketing, and finance teams.",
+    "Delivered a sustainable data foundation for future automation phases, reducing manual effort and technical debt.",
+    "Set a precedent for Agile-driven data migration under high-constraint scenarios, accelerating delivery without compromising quality or governance."
+  ],
+  "tools": ["Databricks", "Python", "Pandas", "BigQuery", "Box"],
+  "softskills": [
+    "AGILE project management",
+    "Strategic planning under time constraints",
+    "Cross-functional collaboration",
+    "Problem-solving",
+    "Process documentation and optimization"
+  ],
+  "keywords": [
+    "ETL",
+    "Agile",
+    "Archtics",
+    "BigQuery",
+    "Databricks",
+    "Data migration",
+    "Automation roadmap"
+  ]
+},
   {
     "tag": "Global Databricks Proposal",
     "company": "Ticketmaster Global BI",
     "period": "2025",
-    "context": "Global BI team required unified governance for Databricks data across regions.",
+    "context": "Global BI team required unified governance for Archtics data across regions.",
     "actions": [
       "Prepared proposal using Mexico case studies (Finance, Fraud, Banking/Sponsorships, Marketing, Reporting).",
       "Highlighted issues with current pipelines and benefits of a global approach.",
       "Suggested governance standards and best practices."
     ],
     "impact": [
-      "Raised visibility of Mexico’s BI challenges at global level.",
+      "Raised visibility of Mexico’s BI challenges at the global level.",
       "Contributed to alignment on future global architecture."
     ],
-    "tools": ["Databricks", "BigQuery", "Python", "Governance frameworks"],
-    "softskills": ["Strategic communication", "Governance", "Collaboration"],
+    "tools": ["Arcxhtcis", "Databricks", "BigQuery", "Python", "Governance frameworks"],
+    "softskills": ["Strategic communication", "Governance", "Interarea Collaboration"],
     "keywords": ["Databricks", "governance", "global BI"]
   },
-  {
-    "tag": "Fraud & Cybersecurity Dashboards",
-    "company": "Ticketmaster Mexico",
-    "period": "2023",
-    "context": "Needed monitoring for fraud detection and cybersecurity risks.",
-    "actions": [
-      "Designed dashboards integrating fraud detection data sources.",
-      "Coordinated with Fraud/Cybersecurity teams to define KPIs."
-    ],
-    "impact": [
-      "Provided visibility into suspicious transactions and threats.",
-      "Enabled faster response times for fraud prevention."
-    ],
-    "tools": ["Tableau", "SQL", "Databricks"],
-    "softskills": ["Cross-functional teamwork", "Risk management"],
-    "keywords": ["fraud", "cybersecurity", "dashboard"]
-  },
+{
+  "tag": "Fraud & Cybersecurity Data Protocol",
+  "company": "Ticketmaster Mexico",
+  "period": "2025",
+  "context": "In response to several cybersecurity incidents affecting database integrity across on-premise and cloud environments, I led the creation of a preventive and reactive data protocol. Combining my background in Strategic Foresight with BI practices, I applied scenario planning and risk modelling to develop an immediate response plan for data breaches, fraud attempts, and potential data loss. The initiative aimed to strengthen resilience, governance, and detection capacity across all data platforms.",
+  "actions": [
+    "Developed a Data Accuracy dashboard to automatically detect anomalies, deletions, or alterations in key databases, integrating audit logs and backup status from Databricks and SQL servers.",
+    "Built real-time monitoring dashboards for fraud detection and cybersecurity risks, ensuring visibility into suspicious transactions and data integrity issues.",
+    "Collaborated with the Fraud, Cybersecurity, and Database teams to define KPIs, incident thresholds, and automated alert mechanisms.",
+    "Created a structured data breach response protocol, outlining preventive, reactive, and post-incident recovery measures with cross-departmental coordination.",
+    "Applied Strategic Foresight and scenario planning methods to anticipate possible cyberattack patterns and define mitigation strategies."
+  ],
+  "impact": [
+    "Established a company-wide framework for rapid fraud and cyber incident response, improving reaction times and coordination.",
+    "Enhanced data reliability and trust by implementing automated validation and backup alert systems.",
+    "Reduced operational risk and data exposure across both on-premise and cloud infrastructures.",
+    "Integrated long-term foresight principles into cybersecurity decision-making, fostering a proactive data governance culture."
+  ],
+  "tools": ["Tableau", "SQL", "Databricks", "Smartsheet", "Python"],
+  "softskills": [
+    "Strategic foresight and scenario planning",
+    "Cross-functional collaboration",
+    "Crisis management and decision-making",
+    "Governance and risk mitigation",
+    "Communication under pressure"
+  ],
+  "keywords": [
+    "fraud detection",
+    "cybersecurity",
+    "data accuracy",
+    "data breach protocol",
+    "risk management",
+    "scenario planning",
+    "resilience"
+  ]
+},
   {
     "tag": "Cross-Functional Leadership",
     "company": "Ticketmaster Mexico",
-    "period": "2022-2024",
+    "period": "2022-2025",
     "context": "Multiple departments (MKT, Revenue, Finance, Ops, HR) required coordinated BI support.",
     "actions": [
       "Led BI team in handling requests across 7+ functional areas.",
@@ -130,7 +165,7 @@
     "tag": "API Creation & Governance",
     "company": "Ticketmaster Mexico",
     "period": "2023",
-    "context": "Manual exports slowed down analytics. Needed APIs for buyer and event data.",
+    "context": "Manual exports slowed down analytics. Needed APIs for marketing and event data.",
     "actions": [
       "Created lightweight ingestion endpoints.",
       "Defined schema governance and documentation."
@@ -278,7 +313,7 @@
     "Developed side projects in visualization, healthcare apps, and hackathon-style competitions."
   ],
   "impact": [
-    "Built strong professional network in Canada and Mexico.",
+    "Built a strong professional network in Canada and Mexico.",
     "Expanded skillset beyond formal roles, demonstrating adaptability and curiosity."
   ],
   "tools": ["Networking", "Hackathons", "Side projects"],
@@ -286,3 +321,4 @@
   "keywords": ["extracurricular", "AI Summit", "networking", "projects"]
 }
 ]
+
