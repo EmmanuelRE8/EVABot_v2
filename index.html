@@ -1,55 +1,73 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>P.A.I.R. — Personal AI Résumé</title>
-<meta name="description" content="P.A.I.R. — Emmanuel’s Personal AI Résumé: an interactive, intelligent version of my professional journey. Ask about my projects, analytics work, and leadership impact.">
-<meta property="og:title" content="P.A.I.R. — Personal AI Résumé">
-<meta property="og:description" content="An interactive, AI-powered résumé showcasing Emmanuel’s work in Business Intelligence, Data Analytics, and AI.">
-<meta property="og:image" content="https://emmanuelre8.github.io/PAIR_Bot/preview.png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">  
-<meta property="og:type" content="website">
-<style>
-  :root{
-    --green:#05a06d; --green-ink:#065f46;
-    --ink:#0f172a; --muted:#64748b; --line:#e5e7eb; --bg:#ffffff; --soft:#f6fefb;
-    --chip-bg:#ecfdf5; --chip-bd:#d1fae5; --chip-ink:#065f46;
-  }
-  *{box-sizing:border-box}
-  body{margin:0; font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial; color:var(--ink); background:var(--bg)}
-  a{color:var(--green-ink); text-decoration:none}
-  .wrap{max-width:1100px; margin:0 auto; padding:20px}
-  .grid{display:grid; grid-template-columns:340px 1fr; gap:18px}
-  @media (max-width: 900px){ .grid{grid-template-columns:1fr} }
-  .card{background:#fff; border:1px solid var(--line); border-radius:18px; box-shadow:0 6px 24px rgba(0,0,0,.06)}
-  header{padding:18px 22px; border-bottom:1px solid var(--line); display:flex; align-items:center; justify-content:space-between}
-  header h1{font-size:18px; margin:0}
-  header small{color:var(--muted)}
-  /* Profile */
-  .profile{padding:18px 18px}
-  .name{font-size:22px; font-weight:700; margin:4px 0}
-  .badge{display:inline-block; background:rgba(5,160,109,.1); color:var(--green-ink); border:1px solid rgba(5,160,109,.25); padding:4px 8px; border-radius:999px; font-size:12px}
-  .kv{margin:10px 0 0 0; padding:0; list-style:none}
-  .kv li{display:flex; gap:8px; padding:6px 0; border-bottom:1px dashed #edf2f7}
-  .kv li:last-child{border-bottom:none}
-  .kv b{min-width:120px; color:var(--muted); font-weight:600}
-  .cta{display:flex; gap:10px; margin-top:12px; flex-wrap:wrap}
-  .btn{background:var(--green); color:#fff; border:none; padding:10px 14px; border-radius:12px; font-weight:600; cursor:pointer}
-  .btn.secondary{background:#ecfeff; color:#0e7490; border:1px solid #bae6fd}
-  .pill{display:inline-block; padding:3px 10px; border-radius:999px; background:#eef2ff; color:#3730a3; border:1px solid #c7d2fe; font-size:12px; margin:2px 6px 0 0}
-  /* Chat */
-  .chat-wrap .chips{display:flex; flex-wrap:wrap; gap:8px; padding:12px 16px; border-bottom:1px solid var(--line)}
-  .chip{background:var(--chip-bg); color:var(--chip-ink); border:1px solid var(--chip-bd); padding:6px 10px; border-radius:999px; font-size:12px; cursor:pointer}
-  .chat{padding:16px; height:60vh; min-height:380px; overflow:auto; scroll-behavior:smooth;}
-  .msg{max-width:78%; margin:8px 0; padding:12px 14px; border-radius:14px; line-height:1.35; word-wrap:break-word}
-  .me{margin-left:auto; background:#1f77b4; color:#fff; border-bottom-right-radius:6px}
-  .bot{margin-right:auto; background:var(--soft); border:1px solid var(--line); color:var(--ink); border-bottom-left-radius:6px}
-  .inputbar{display:flex; gap:10px; padding:12px; border-top:1px solid var(--line)}
-  .inputbar input{flex:1; padding:12px 14px; border:1px solid var(--line); border-radius:12px; font-size:14px}
-  .inputbar button{background:var(--green); color:#fff; border:none; padding:12px 16px; border-radius:12px; cursor:pointer; font-weight:600}
-</style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Emmanuel's P.A.I.R. (Personal AI Résumé)</title>
+  <meta name="description" content="P.A.I.R. — Emmanuel’s Personal AI Résumé: an interactive, intelligent version of my professional journey. Ask about my projects, analytics work, and leadership impact.">
+
+  <!-- Canonical / Open Graph -->
+  <link rel="canonical" href="https://emmanuelre8.github.io/PAIR_Bot/" />
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="PAIR — Personal AI Résumé">
+  <meta property="og:description" content="An interactive, AI-powered résumé showcasing Emmanuel’s work in Business Intelligence, Data Analytics, and AI.">
+  <meta property="og:url" content="https://emmanuelre8.github.io/PAIR_Bot/">
+  <meta property="og:image" content="https://emmanuelre8.github.io/PAIR_Bot/preview.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="P.A.I.R. — Personal AI Résumé">
+  <meta name="twitter:description" content="Interactive, AI-powered résumé by Emmanuel — BI, Analytics & AI projects.">
+  <meta name="twitter:image" content="https://emmanuelre8.github.io/PAIR_Bot/preview.png">
+
+  <meta name="theme-color" content="#05a06d">
+
+  <style>
+    :root{
+      --green:#05a06d; --green-ink:#065f46;
+      --ink:#0f172a; --muted:#64748b; --line:#e5e7eb; --bg:#ffffff; --soft:#f6fefb;
+      --chip-bg:#ecfdf5; --chip-bd:#d1fae5; --chip-ink:#065f46;
+    }
+    *{box-sizing:border-box}
+    body{margin:0; font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial; color:var(--ink); background:var(--bg)}
+    a{color:var(--green-ink); text-decoration:none}
+    .wrap{max-width:1100px; margin:0 auto; padding:20px}
+    .grid{display:grid; grid-template-columns:340px 1fr; gap:18px}
+    @media (max-width: 900px){ .grid{grid-template-columns:1fr} }
+
+    .card{background:#fff; border:1px solid var(--line); border-radius:18px; box-shadow:0 6px 24px rgba(0,0,0,.06)}
+    header{padding:18px 22px; border-bottom:1px solid var(--line); display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap}
+    header h1{font-size:18px; margin:0}
+    header small{color:var(--muted)}
+
+    /* Profile */
+    .profile{padding:18px}
+    .avatar-wrap{display:flex; justify-content:center; margin-bottom:12px}
+    .avatar{position:relative; width:120px; height:120px; border-radius:50%; border:2px solid #d1fae5; background:#fff; display:flex; align-items:center; justify-content:center; overflow:hidden}
+    .avatar img{width:100%; height:100%; object-fit:cover; display:block}
+    .avatar-fallback{display:none; width:100%; height:100%; border-radius:50%; background:#e6fffa; color:#0f766e; font-weight:800; font-size:36px; letter-spacing:1px; display:flex; align-items:center; justify-content:center}
+    .name{font-size:22px; font-weight:700; margin:4px 0}
+    .badge{display:inline-block; background:rgba(5,160,109,.1); color:var(--green-ink); border:1px solid rgba(5,160,109,.25); padding:4px 8px; border-radius:999px; font-size:12px}
+    .kv{margin:10px 0 0 0; padding:0; list-style:none}
+    .kv li{display:flex; gap:8px; padding:6px 0; border-bottom:1px dashed #edf2f7}
+    .kv li:last-child{border-bottom:none}
+    .kv b{min-width:120px; color:var(--muted); font-weight:600}
+    .pill{display:inline-block; padding:3px 10px; border-radius:999px; background:#eef2ff; color:#3730a3; border:1px solid #c7d2fe; font-size:12px; margin:2px 6px 0 0}
+
+    /* Chat */
+    .chat-wrap .chips{display:flex; flex-wrap:wrap; gap:8px; padding:12px 16px; border-bottom:1px solid var(--line)}
+    .chip{background:var(--chip-bg); color:var(--chip-ink); border:1px solid var(--chip-bd); padding:6px 10px; border-radius:999px; font-size:12px; cursor:pointer}
+    .chat{padding:16px; height:60vh; min-height:380px; overflow:auto; scroll-behavior:smooth;}
+    .msg{max-width:78%; margin:8px 0; padding:12px 14px; border-radius:14px; line-height:1.35; word-wrap:break-word}
+    .me{margin-left:auto; background:#1f77b4; color:#fff; border-bottom-right-radius:6px}
+    .bot{margin-right:auto; background:var(--soft); border:1px solid var(--line); color:var(--ink); border-bottom-left-radius:6px}
+    .inputbar{display:flex; gap:10px; padding:12px; border-top:1px solid var(--line)}
+    .inputbar input{flex:1; padding:12px 14px; border:1px solid var(--line); border-radius:12px; font-size:14px}
+    .inputbar button{background:var(--green); color:#fff; border:none; padding:12px 16px; border-radius:12px; cursor:pointer; font-weight:600}
+  </style>
 </head>
 <body>
 <div class="wrap">
@@ -58,23 +76,24 @@
       <h1>Emmanuel’s Personal AI Résumé</h1>
       <small>by Emmanuel Rueda Escalona · MBAI (Ontario Tech)</small>
     </header>
+
     <div class="grid">
-
       <!-- LEFT: PROFILE -->
-  <aside class="card profile">
-  <div style="text-align:center; margin-bottom:12px;">
-    <img src="https://emmanuelre8.github.io/PAIR_Bot/preview.png" alt="PAIR Avatar" 
-         style="width:120px; height:120px; border-radius:50%; object-fit:cover; border:2px solid #d1fae5;">
-  </div>
+      <aside class="card profile">
+        <div class="avatar-wrap">
+          <div class="avatar">
+            <img src="pair-avatar.png" alt="PAIR bot avatar"
+                 width="120" height="120" loading="lazy"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="avatar-fallback" aria-hidden="true">ER</div>
+          </div>
+        </div>
 
-  <div class="badge" id="pf_badge">Available for Analytics / BI / AI roles</div>
-  <div class="name" id="pf_name">Emmanuel Rueda Escalona</div>
-  <div id="pf_tagline" style="color:var(--muted)">Business Analytics & AI · Data/BI Leader</div>
+        <div class="badge" id="pf_badge">Available for Analytics / BI / AI roles</div>
+        <div class="name" id="pf_name">Emmanuel Rueda Escalona</div>
+        <div id="pf_tagline" style="color:var(--muted)">Business Intelligence & Analytics Leader</div>
 
-        <ul class="kv" id="pf_kv">
-          <!-- se completa con JS desde profile.json -->
-        </ul>
-
+        <ul class="kv" id="pf_kv"><!-- filled by JS --></ul>
 
         <div style="margin-top:12px">
           <h3 style="font-size:14px; color:var(--muted); margin:14px 0 8px 0;">Skills</h3>
@@ -91,7 +110,6 @@
           <button id="send">Send</button>
         </div>
       </section>
-
     </div>
   </div>
 </div>
@@ -116,6 +134,7 @@ async function loadProfile(){
 
     document.getElementById("pf_name").textContent    = PROFILE.name || "—";
     document.getElementById("pf_tagline").textContent = PROFILE.headline || "";
+
     const ul = document.getElementById("pf_kv");
     const kvs = [
       ["Location", PROFILE.location || ""],
@@ -136,7 +155,6 @@ async function loadProfile(){
     const sk = document.getElementById("pf_skills");
     sk.innerHTML = skills.map(s=>`<span class="pill">${s}</span>`).join("");
   }catch(e){
-    // si falla, deja el placeholder
     console.warn("Profile load warning:", e);
   }
 }
@@ -148,19 +166,21 @@ const input = document.getElementById("q");
 const send  = document.getElementById("send");
 const chips = document.getElementById("chips");
 
+function sanitize(text=""){
+  return text
+    .replace(/\*\*(.*?)\*\*/g, "$1") // strip bold
+    .replace(/\*/g, "")              // strip stray stars
+    .replace(/(^|\n)- /g, "$1• ")    // bullets
+    .replace(/\n/g, "<br>");         // newlines
+}
 function addMsg(text, who){
   const div = document.createElement("div");
   div.className = `msg ${who}`;
-  const safe = (text||"")
-    .replace(/\*\*(.*?)\*\*/g, "$1")   // strip bold
-    .replace(/\*/g, "")                // strip stray stars
-    .replace(/\n/g, "<br>")            // newlines to <br>
-    .replace(/- /g, "• ");             // bullets
-  div.innerHTML = safe;
+  div.innerHTML = sanitize(text);
   chat.appendChild(div);
   chat.scrollTop = chat.scrollHeight;
 }
-  
+
 async function sendQ(){
   const q = input.value.trim();
   if (!q) return;
@@ -178,7 +198,6 @@ async function sendQ(){
     addMsg("Oops, there was a problem. Please try again.", "bot");
   }
 }
-
 send.onclick = sendQ;
 input.addEventListener("keydown", (e)=>{ if (e.key==="Enter") sendQ(); });
 
@@ -191,16 +210,7 @@ QUICK.forEach(t=>{
 });
 
 // Welcome
-addMsg("Hi! Ask me about my projects, work history, availability, or STAR examples. 👋", "bot");
+addMsg("Hi! I’m P.A.I.R. — Emmanuel’s Personal AI Résumé. Ask me about projects, work history, availability, or a STAR example. 👋", "bot");
 </script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
