@@ -1,4 +1,4 @@
-# PAIR — Personal AI Résumé 🤖
+# Emmanuel's P.A.I.R. (Personal AI Résumé) 🤖
 
 **PAIR** (*Personal AI Résumé*) is an interactive, AI-powered version of my professional journey.  
 It combines a dynamic portfolio with conversational intelligence — allowing recruiters and peers  
@@ -14,7 +14,7 @@ can merge into a single interactive storytelling experience.
 Instead of reading bullet points, visitors can:
 - 💬 Chat with my virtual résumé to ask about projects, tools, or achievements.  
 - 🔍 Explore **STAR-style** examples that highlight leadership, analytics, and innovation.  
-- ⚙️ Experience a **real-world AI application** built with LLMs, Databricks, and BigQuery data.  
+- ⚙️ Experience a **real-world AI application** built with LLMs (Groq), JavaScript, HTML, JSON, and Cloudflare.  
 
 ---
 
