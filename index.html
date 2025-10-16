@@ -82,16 +82,19 @@
 <!-- LEFT: PROFILE -->
 <aside class="card profile">
   <div class="avatar-wrap">
-    <div class="avatar">
-      <img 
-        src="https://emmanuelre8.github.io/PAIR_Bot/preview.png"
-        alt="PAIR bot avatar"
-        width="120" height="120" 
-        loading="lazy"
-        style="border-radius:50%; object-fit:cover; object-position:20% 50%;"
-        onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-      
+  <div class="avatar">
+  <div
+    role="img" aria-label="PAIR bot avatar"
+    style="
+      width:120px; height:120px; border-radius:50%;
+      background-image:url('https://emmanuelre8.github.io/PAIR_Bot/preview.png');
+      background-size: 220% auto;        /* zoom */
+      background-position: 18% 50%;      /* izquierda y centrado vertical */
+      background-repeat: no-repeat;
+    ">
   </div>
+</div>
+
 
   <div class="badge" id="pf_badge">Available for Analytics / BI / AI roles</div>
   <div class="name" id="pf_name">Emmanuel Rueda Escalona</div>
@@ -104,7 +107,7 @@
     <div id="pf_skills"></div>
   </div>
 </aside>
-      
+
       <!-- RIGHT: CHAT -->
       <section class="card chat-wrap">
         <div class="chips" id="chips"></div>
@@ -218,6 +221,7 @@ addMsg("Hi! I’m P.A.I.R. — Emmanuel’s Personal AI Résumé. Ask me about p
 </script>
 </body>
 </html>
+
 
 
 
