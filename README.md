@@ -1,6 +1,6 @@
-# E-V.A. bot (v2)
+# Emmanuel's P. A. I. R. (Personal AI Résumé)
 
-This repository hosts **E-V.A. bot**, an interactive chatbot that presents my career, projects, and skills in a dynamic way.  
+This repository hosts Emmanuel's **Personal AI Resumé (P.A.I.R)**, an interactive chatbot that presents my career, projects, and skills in a dynamic way.  
 
 It combines:  
 - A **profile panel** with personal/professional details.  
@@ -17,13 +17,13 @@ It combines:
 
 ## 🎯 Purpose
 
-The goal of E-V.A. Bot is to go **beyond a traditional CV** and showcase my experience through an **interactive, AI-powered format**.  
+The goal of P.A.I.R Bot is to go **beyond a traditional CV** and showcase my experience through an **interactive, AI-powered format**.  
 
 Instead of just reading static text, recruiters and colleagues can:  
 - **Ask questions** about my projects, skills, and impact.  
 - Learn about my **career timeline, roles, and availability**.  
-- Explore **STAR-style answers** to behavioral/soft skill questions.  
-- See how BI/AI tools can be applied to storytelling in real-world career fairs.  
+- Explore **STAR-style answers** to behavioural/soft skill questions.  
+- See how the BI/AI tools I created can be applied to storytelling in real-world career fairs.  
 
 ---
 
@@ -71,13 +71,12 @@ Instead of just reading static text, recruiters and colleagues can:
 
 ## 💡 Learning Outcomes
 
-This project shows how to combine **BI, AI, and storytelling** to stand out in a **reverse career fair**:  
-
-- Demonstrates **creativity + technical skills**.  
+This project shows how to combine **BI, AI, and storytelling**:  
+ 
 - Uses **LLMs** in a practical, low-cost way (Groq API).  
 - Integrates **GitHub Pages + Cloudflare Workers** for free hosting.  
 - Provides a **hands-on proof** of how BI professionals can make data **accessible and engaging**.  
 
 ---
 
-👉 This README itself becomes part of the narrative: showing not only *what EmmaBot does*, but also *how it was engineered*.  
+👉 This README itself becomes part of the narrative: showing not only *what P.A.I.R. does*, but also *how it was engineered*.  
