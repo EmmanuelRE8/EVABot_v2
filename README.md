@@ -6,6 +6,11 @@ to explore my projects, skills, and impact through natural dialogue.
 
 ---
 
+### 🌐 Live Demo
+👉 [https://emmanuelre8.github.io/PAIR_Bot/](https://emmanuelre8.github.io/PAIR_Bot/)
+
+---
+
 ### 🎯 Purpose
 
 PAIR goes beyond a static CV — it demonstrates how Business Intelligence, Data, and AI  
@@ -22,11 +27,6 @@ Instead of reading bullet points, visitors can:
 - **Frontend:** HTML, CSS, Vanilla JS (GitHub Pages)
 - **Backend:** Cloudflare Workers + Groq API (Llama 3.1)
 - **Knowledge Base:** JSON sources (`profile.json`, `kb.json`, `star_bank.json`)
-
----
-
-### 🌐 Live Demo
-👉 [https://emmanuelre8.github.io/PAIR_Bot/](https://emmanuelre8.github.io/PAIR_Bot/)
 
 ---
 
