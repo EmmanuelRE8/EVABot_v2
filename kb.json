@@ -303,6 +303,188 @@
   "keywords": ["OCESA Brain", "events", "analytics", "ticketing"]
 },
 {
+  "tag": "MX-Data Project",
+  "company": "Ticketmaster Mexico",
+  "period": "2025",
+  "context": "Developed as an agile alternative to the Azure migration project, MX-Data aimed to centralize and optimize data processing between Databricks and BigQuery. The project was conceived to reduce external dependencies, lower costs, and increase operational autonomy for morning load processes, focusing on speed, stability, and scalability of BI operations.",
+  "actions": [
+    "Mapped and prioritized critical databases for migration, defining triage criteria such as sensitivity, dependency level, and business priority.",
+    "Created new data ingestion workflows in Databricks with automated cleaning and transformation scripts written in Python and SQL.",
+    "Established a unified reporting model to serve BI, finance, and marketing teams using BigQuery as the single source of truth.",
+    "Collaborated with PMO and development teams to align MX-Data with corporate architecture and compliance requirements."
+  ],
+  "impact": [
+    "Reduced processing time and dependency on external vendors for morning loads.",
+    "Improved data reliability and system scalability while simplifying maintenance.",
+    "Provided a leaner and more autonomous architecture aligned with corporate standards."
+  ],
+  "tools": ["Databricks", "Python", "SQL", "BigQuery"],
+  "softskills": [
+    "Agile project leadership",
+    "Strategic planning",
+    "Cross-department collaboration",
+    "System optimization"
+  ],
+  "keywords": ["data migration", "Databricks", "BigQuery", "BI architecture", "process efficiency"]
+},
+{
+  "tag": "Dashboard Governance Program",
+  "company": "Ticketmaster Mexico",
+  "period": "2024–2025",
+  "context": "To address inconsistencies in reporting and visual standards across departments, I designed a governance program for dashboard creation, documentation, and approval. The initiative aimed to ensure alignment with corporate KPIs, improve data quality, and accelerate delivery through standardized templates and QA processes.",
+  "actions": [
+    "Created standardized dashboard templates and documentation guidelines for BI, Finance, and Marketing teams.",
+    "Defined a QA checklist covering data validation, visual consistency, and performance testing before publication.",
+    "Established a centralized repository for dashboards, promoting transparency and reuse across teams.",
+    "Trained analysts on storytelling best practices and stakeholder communication through data."
+  ],
+  "impact": [
+    "Reduced dashboard rework by 40% and improved stakeholder satisfaction.",
+    "Increased consistency, accuracy, and credibility of executive reporting.",
+    "Fostered a data-driven culture with shared visual and analytical standards."
+  ],
+  "tools": ["Tableau", "Looker Studio", "Smartsheet", "BigQuery"],
+  "softskills": [
+    "Governance and standardization",
+    "Training and mentoring",
+    "Stakeholder management",
+    "Analytical storytelling"
+  ],
+  "keywords": ["dashboard governance", "QA", "data quality", "standardization", "reporting framework"]
+},
+{
+  "tag": "Leadership & Training Program",
+  "company": "Ticketmaster Mexico",
+  "period": "2024–2025",
+  "context": "As BI Lead, I created a professional development program for analysts and coordinators focused on leadership, data management, and communication. The goal was to build future BI leaders capable of handling strategic projects, technical problem-solving, and cross-department collaboration.",
+  "actions": [
+    "Designed a structured learning path covering technical skills (SQL, Databricks, Tableau) and soft skills (leadership, communication, project ownership).",
+    "Organized mentoring sessions and weekly knowledge-sharing meetings among analysts and team leads.",
+    "Developed performance metrics and career progression plans aligned with corporate OKRs."
+  ],
+  "impact": [
+    "Improved team effectiveness and engagement, achieving +20% OKR completion rate.",
+    "Created a sustainable talent pipeline for future BI leadership roles.",
+    "Enhanced collaboration and communication between BI and other departments."
+  ],
+  "tools": ["Smartsheet", "Databricks", "Tableau", "BigQuery"],
+  "softskills": [
+    "Leadership development",
+    "Mentoring and coaching",
+    "Performance management",
+    "Team building"
+  ],
+  "keywords": ["leadership", "training program", "career development", "team performance"]
+},
+{
+  "tag": "Recruitment Interview Training",
+  "company": "Ticketmaster Mexico",
+  "period": "2024–2025",
+  "context": "Selected as part of the internal interviewer program to participate in recruitment processes for BI analysts. The objective was to strengthen hiring standards, technical assessments, and candidate evaluation alignment with company needs.",
+  "actions": [
+    "Trained in structured interview techniques and competency-based evaluation.",
+    "Designed technical challenges focused on SQL, Excel, and BI logic for analyst candidates.",
+    "Collaborated with HR to refine candidate selection criteria and improve onboarding efficiency."
+  ],
+  "impact": [
+    "Improved accuracy and fairness in hiring BI professionals.",
+    "Helped identify and onboard high-performing analysts who quickly integrated into team workflows."
+  ],
+  "tools": ["Excel", "SQL", "Smartsheet"],
+  "softskills": ["Interviewing", "Evaluation", "Talent development"],
+  "keywords": ["recruitment", "interviewing", "BI analysts", "talent acquisition"]
+},
+{
+  "tag": "HR Analytics Dashboard",
+  "company": "Ticketmaster Mexico",
+  "period": "2024",
+  "context": "Developed an HR analytics dashboard integrating attendance, satisfaction, and training data to support human resources decision-making. The goal was to visualize workforce engagement and learning program effectiveness.",
+  "actions": [
+    "Collected and cleaned data from HR surveys, attendance records, and training sessions.",
+    "Created Looker Studio dashboards showing participation, satisfaction trends, and training impact.",
+    "Implemented KPIs to track performance improvement and identify training needs."
+  ],
+  "impact": [
+    "Improved visibility into workforce engagement and development programs.",
+    "Enabled HR to make data-driven decisions regarding training investment and employee well-being."
+  ],
+  "tools": ["Looker Studio", "Smartsheet", "Excel"],
+  "softskills": ["Analytical storytelling", "Stakeholder communication", "HR analytics"],
+  "keywords": ["HR analytics", "employee engagement", "training metrics", "dashboard"]
+},
+{
+  "tag": "GA4 to BigQuery Migration",
+  "company": "Ticketmaster Mexico",
+  "period": "2024",
+  "context": "Led the migration of Google Analytics 4 (GA4) data into BigQuery to enable unified and historical digital analytics. Focused on building dynamic SQL filtering to extract meaningful insights by date, campaign, and event type.",
+  "actions": [
+    "Developed SQL queries for dynamic filtering and segmentation of GA4 data by date, campaign, and device.",
+    "Automated the data export and transformation pipeline from GA4 to BigQuery.",
+    "Created visual dashboards for digital performance tracking and marketing attribution."
+  ],
+  "impact": [
+    "Enabled cross-year analysis of digital campaigns, improving marketing ROI visibility.",
+    "Reduced manual extraction effort by automating recurring GA4 queries and transformations."
+  ],
+  "tools": ["BigQuery", "SQL", "Tableau"],
+  "softskills": ["Automation", "Digital analytics", "Process improvement"],
+  "keywords": ["GA4", "BigQuery", "SQL automation", "digital marketing analytics"]
+},
+{
+  "tag": "PAIR Bot – Professional AI Reporting Assistant",
+  "company": "Personal Project",
+  "period": "2025",
+  "context": "Developed an interactive chatbot prototype designed to present professional experience, projects, and technical skills using a structured knowledge base (kb.json). The goal was to create a conversational portfolio tool adaptable to career fairs and online networking.",
+  "actions": [
+    "Designed and coded the chatbot interface in HTML, CSS, and JavaScript with dynamic animation and adaptive layout.",
+    "Structured the underlying knowledge base to provide contextual and skill-based responses.",
+    "Integrated branding elements for LinkedIn and GitHub presentation."
+  ],
+  "impact": [
+    "Created a fully functional conversational portfolio showcasing data and BI expertise.",
+    "Demonstrated applied skills in web development, UX/UI, and knowledge structuring."
+  ],
+  "tools": ["HTML", "CSS", "JavaScript", "JSON"],
+  "softskills": ["Creativity", "Storytelling", "Technical presentation"],
+  "keywords": ["chatbot", "portfolio", "UI design", "NLP", "personal branding"]
+},
+{
+  "tag": "SEO Data Strategy – Wisevoter Project",
+  "company": "Top Agency",
+  "period": "2021–2023",
+  "context": "Collaborated on the Wisevoter project focused on SEO-driven data strategies to increase organic traffic and audience engagement in U.S. political and social content platforms.",
+  "actions": [
+    "Defined and implemented keyword strategies based on data analysis and topic trends.",
+    "Developed dynamic visual content (maps, tables, and charts) using JavaScript and D3.js.",
+    "Managed MySQL databases and coordinated with developers and designers to ensure SEO optimization and data accuracy."
+  ],
+  "impact": [
+    "Increased organic reach and content ranking through data-informed SEO decisions.",
+    "Enhanced interactivity and visibility of data storytelling elements on the platform."
+  ],
+  "tools": ["JavaScript", "D3.js", "MySQL", "WordPress", "Figma"],
+  "softskills": ["SEO strategy", "Collaboration", "Data visualization"],
+  "keywords": ["SEO", "data storytelling", "web analytics", "visualization"]
+},
+{
+  "tag": "Media Monitoring & Global Context Tracking",
+  "company": "Cuadrante",
+  "period": "2020–2021",
+  "context": "Monitored real-time media coverage of political, energy, and transportation topics to assess public perception and media impact for high-profile clients.",
+  "actions": [
+    "Collected and analyzed media and social data to identify narrative trends and reputation risks.",
+    "Created strategic dashboards and reports summarizing coverage metrics, tone, and media exposure.",
+    "Collaborated with communication teams to translate data insights into actionable recommendations."
+  ],
+  "impact": [
+    "Improved understanding of public sentiment and stakeholder communication outcomes.",
+    "Supported data-driven communication and PR strategies across multiple industries."
+  ],
+  "tools": ["Excel", "Tableau", "Python"],
+  "softskills": ["Media analysis", "Strategic communication", "Data storytelling"],
+  "keywords": ["media monitoring", "public opinion", "communication analytics", "PR metrics"]
+},
+{
   "tag": "Extracurricular Activities",
   "company": "Personal / Community",
   "period": "Ongoing",
@@ -321,4 +503,5 @@
   "keywords": ["extracurricular", "AI Summit", "networking", "projects"]
 }
 ]
+
 
