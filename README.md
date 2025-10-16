@@ -26,7 +26,7 @@ Instead of reading bullet points, visitors can:
 ---
 
 ### 🌐 Live Demo
-👉 [https://emmanuelre8.github.io/PAIR](https://emmanuelre8.github.io/PAIR)
+👉 [https://emmanuelre8.github.io/PAIR_Bot/](https://emmanuelre8.github.io/PAIR_Bot/)
 
 ---
 
