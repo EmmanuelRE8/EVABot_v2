@@ -1,26 +1,91 @@
 [
   {
-    "tag": "Stakeholder Management — BEATS",
-    "skill": "Stakeholder Management",
-    "situation": "BI requests lacked visibility and SLAs; delays caused frustration.",
-    "task": "Create a transparent, trackable intake and delivery process.",
-    "action": "Built BEATS in Smartsheet with triage forms, auto-reminders, delivery proofs.",
-    "result": "Effectiveness 80%→98%; ~2 days faster; higher satisfaction across teams."
+    "tag": "Problem Solving — MX-Data Project",
+    "skill": "Problem Solving",
+    "situation": "The Azure migration was delayed for over a year, blocking BI operations.",
+    "task": "Deliver a faster, cost-efficient data migration alternative.",
+    "action": "Designed MX-Data using Databricks + BigQuery; mapped DB priorities, created triage and agile sprints.",
+    "result": "Reduced dependency on external vendors; stabilized daily loads; improved data reliability and speed."
   },
   {
-    "tag": "Cross-Functional Leadership",
-    "skill": "Leadership",
-    "situation": "Multiple areas (MKT, Revenue, Finance, Fraud, Ops, HR) needed BI alignment.",
-    "task": "Prioritize by business value and standardize delivery.",
-    "action": "Set triage, defined standards, coached team; regular exec syncs.",
-    "result": "Higher delivery reliability and adoption; clearer KPI ownership."
+    "tag": "Working Under Time Pressure — Archtics Pipeline",
+    "skill": "Time Management",
+    "situation": "Had only two months to migrate historical sales data before relocating to Canada.",
+    "task": "Ensure BI access to Archtics data while preparing a scalable ETL base.",
+    "action": "Applied Agile principles; built a semi-automated Databricks pipeline and documented for next iterations.",
+    "result": "Delivered MVP on time; BI teams accessed 7 years of history; left full automation roadmap ready."
   },
   {
-    "tag": "Data Pipeline Modernization",
-    "skill": "Process Improvement",
-    "situation": "Legacy Archtics exports were manual and error-prone.",
-    "task": "Enable governed historical analysis in BigQuery.",
-    "action": "Databricks notebooks (PySpark/Pandas), QA checks, docs, Box ingestion.",
-    "result": "2017–2024 analysis unlocked; reproducible ETL; reduced manual work."
+    "tag": "Conflict Resolution — BEATS System",
+    "skill": "Conflict Management",
+    "situation": "Departments blamed BI for delivery delays due to lack of visibility and unclear priorities.",
+    "task": "Restore trust and create transparency in request management.",
+    "action": "Built BEATS with transparent SLAs, auto-reminders, and dashboards tracking progress and ownership.",
+    "result": "Cross-area conflicts decreased; satisfaction rose by 18%; smoother collaboration with stakeholders."
+  },
+  {
+    "tag": "Innovation — Fraud & Cybersecurity Protocol",
+    "skill": "Innovation",
+    "situation": "No preventive plan existed for data breaches or database corruption events.",
+    "task": "Develop a monitoring and response framework for fraud and cybersecurity threats.",
+    "action": "Applied Strategic Foresight and scenario planning; created dashboards for data accuracy and alerting.",
+    "result": "Improved readiness and response time; reduced data risk exposure; integrated foresight into BI operations."
+  },
+  {
+    "tag": "Data Governance — Dashboard Governance Program",
+    "skill": "Data Governance",
+    "situation": "Dashboards across teams lacked consistency and validation standards.",
+    "task": "Implement governance and QA to improve reliability of visual analytics.",
+    "action": "Standardized templates, documentation, and QA checklist; trained teams in visual and data storytelling.",
+    "result": "Rework reduced 40%; dashboards standardized; stronger trust in BI outputs."
+  },
+  {
+    "tag": "Mentorship — Leadership & Training Program",
+    "skill": "Team Leadership",
+    "situation": "New analysts lacked structure and guidance for career growth.",
+    "task": "Develop a mentorship and training initiative for BI staff.",
+    "action": "Built technical-learning paths (SQL, Databricks, Tableau) and mentoring sessions; created OKR-based evaluations.",
+    "result": "Team OKR completion +20%; improved skill confidence and promotion readiness among analysts."
+  },
+  {
+    "tag": "Communication — HR Analytics Dashboard",
+    "skill": "Communication",
+    "situation": "HR leadership struggled to see the impact of engagement and training programs.",
+    "task": "Provide clear, data-driven visibility into HR metrics.",
+    "action": "Built interactive dashboards with Looker Studio; visualized satisfaction and participation trends.",
+    "result": "Improved decision-making in training investments; HR adopted dashboards for quarterly reviews."
+  },
+  {
+    "tag": "Cybersecurity Awareness — Fraud Detection Dashboard",
+    "skill": "Risk Management",
+    "situation": "Data loss incidents exposed weaknesses in fraud and security visibility.",
+    "task": "Support fraud and cybersecurity teams with proactive monitoring.",
+    "action": "Integrated Databricks and SQL audit logs; automated anomaly alerts and data accuracy reports.",
+    "result": "Faster detection of suspicious activity; enhanced trust in data reliability and control."
+  },
+  {
+    "tag": "Continuous Improvement — GA4 to BigQuery Migration",
+    "skill": "Process Optimization",
+    "situation": "Digital marketing reports required manual GA4 data exports every week.",
+    "task": "Automate recurring GA4 data processes and integrate historical view.",
+    "action": "Built SQL scripts for dynamic filtering and BigQuery pipelines; automated transformations and dashboards.",
+    "result": "Weekly manual work eliminated; cross-year campaign analytics became automated and reliable."
+  },
+  {
+    "tag": "Collaboration — Wisevoter SEO Data Strategy",
+    "skill": "Collaboration",
+    "situation": "SEO, dev, and design teams worked separately, slowing delivery of data-driven content.",
+    "task": "Align technical and creative teams for cohesive SEO performance.",
+    "action": "Unified keyword analysis, MySQL datasets, and D3.js visuals in coordination with developers and editors.",
+    "result": "Improved page ranking and engagement; established collaborative workflow across disciplines."
+  },
+  {
+    "tag": "Analytical Thinking — Cuadrante Media Monitoring",
+    "skill": "Analytical Thinking",
+    "situation": "Clients needed real-time insights into media coverage for sensitive political and energy topics.",
+    "task": "Translate unstructured media data into actionable insights.",
+    "action": "Built Excel and Tableau dashboards summarizing tone, frequency, and impact of mentions.",
+    "result": "Supported strategic decisions and PR messaging with data-backed evidence."
   }
 ]
+
